@@ -1,17 +1,32 @@
 {
-  "name": "Alita_Robot",
-  "description": "Alita is a Telegram Group management bot made using Pyrogram and Python, which makes it modern and faster than most of the Telegram chat managers.",
-  "keywords": [
-    "telegram bot",
-    "group bot",
-    "group",
-    "manager",
-    "alita",
-    "alita_robot"
-  ],
-  "repository": "https://github.com/Abishnoi69/ANON-RANDI",
-  "website": "https://divideprojects.com",
-  "success_url": "https://t.me/DivideProjects",
+      "name": "AsuX Robot",
+      "description": "A Powerful  Telegram group management bot with anime theme.",
+      "keywords": [
+         "telegram",
+         "advance",
+         "group",
+         "manager",
+         "naorobot"
+      ],
+    
+   "logo":    "https://telegra.ph/file/35e56ba7eace7332356ad.jpg",  
+   "repository": "https://github.com/Abishnoi69/ANON-RANDI",
+   "addons": [
+          {
+         "options": {
+            "version": "13"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],  
   "env": {
     "BOT_TOKEN": {
       "description": "Your telegram bot token, get from @Botfather in telegram.",
@@ -91,17 +106,6 @@
       "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
       "required": true,
       "value": "ANYTHING"
-    }
-  },
-  "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
-  ],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
     }
   }
 }
